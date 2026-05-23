@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="TrishuraJ" fetch="https://github.com/TrishuraJ" />
+  <remote name="alternoegraha" fetch="https://github.com/alternoegraha" />
+
+  <!-- device tree on orion -->
+  <project path="device/xiaomi/fog" name="device_xiaomi_fog" remote="TrishuraJ" revision="orion-16" />
+  <!-- Prebuilt kernel (use alternoegraha's directly) -->
+  <project path="device/xiaomi/fog-kernel" name="device_xiaomi_fog-kernel" remote="alternoegraha" revision="motregen" />
+  <!-- Vendor blobs (use alternoegraha's directly) -->
+  <project path="vendor/xiaomi/fog" name="vendor_xiaomi_fog" remote="alternoegraha" revision="baklava-and-beyond" />
+
+</manifest>
