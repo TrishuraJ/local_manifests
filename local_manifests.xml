@@ -2,6 +2,7 @@
 <manifest>
   <remote name="TrishuraJ" fetch="https://github.com/TrishuraJ" />
   <remote name="alternoegraha" fetch="https://github.com/alternoegraha" />
+  <remote name="LineageOS" fetch="https://github.com/LineageOS" />
 
   <!-- device tree on orion -->
   <project path="device/xiaomi/fog" name="device_xiaomi_fog" remote="TrishuraJ" revision="orion-16" />
