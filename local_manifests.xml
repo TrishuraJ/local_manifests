@@ -2,11 +2,17 @@
 <manifest>
   <remote name="TrishuraJ" fetch="https://github.com/TrishuraJ" />
   <remote name="alternoegraha" fetch="https://github.com/alternoegraha" />
+  <remote name="Romeo13card" fetch="https://github.com/Romeo13card" />
 
   <!-- device tree on axion -->
   <project path="device/xiaomi/fog" name="device_xiaomi_fog" remote="TrishuraJ" revision="axion-16.2" />
-  <!-- Prebuilt kernel (use alternoegraha's directly) -->
-  <project path="device/xiaomi/fog-kernel" name="device_xiaomi_fog-kernel" remote="alternoegraha" revision="motregen" />
+
+  <!-- Prebuilt kernel (alternoegraha's - kept for reference, disabled below) -->
+  <!-- <project path="device/xiaomi/fog-kernel" name="device_xiaomi_fog-kernel" remote="alternoegraha" revision="motregen" /> -->
+
+  <!-- Prebuilt kernel (Romeo13card's) -->
+  <project path="device/xiaomi/fog-kernel" name="device_xiaomi_fog-kernel" remote="Romeo13card" revision="neutron" />
+
   <!-- Vendor blobs (use alternoegraha's directly) -->
   <project path="vendor/xiaomi/fog" name="vendor_xiaomi_fog" remote="alternoegraha" revision="baklava-and-beyond" />
 
