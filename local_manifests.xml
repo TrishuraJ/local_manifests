@@ -3,6 +3,7 @@
   <remote name="TrishuraJ" fetch="https://github.com/TrishuraJ" />
   <remote name="alternoegraha" fetch="https://github.com/alternoegraha" />
   <remote name="Romeo13card" fetch="https://github.com/Romeo13card" />
+  <remote name="LineageOS" fetch="https://github.com/LineageOS" />
 
   <!-- device tree on axion -->
   <project path="device/xiaomi/fog" name="device_xiaomi_fog" remote="TrishuraJ" revision="axion-16.2" />
@@ -15,5 +16,8 @@
 
   <!-- Vendor blobs (use alternoegraha's directly) -->
   <project path="vendor/xiaomi/fog" name="vendor_xiaomi_fog" remote="alternoegraha" revision="baklava-and-beyond" />
+
+  <!-- Qualcomm WLAN HAL source - provides libwifi-hal-qcom, needed by frameworks/opt/net/wifi -->
+  <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" remote="LineageOS" revision="lineage-23.2" />
 
 </manifest>
